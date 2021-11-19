@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(225, 225, 230);
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(imagens/background.png);
+  width: 375px;
+  height: 812px;
+  transition: all 0.5s;
+  border: 10px solid #202024;
+}
+
+main:hover {
+  border: 10px solid #202024;
+  border-radius: 50%;
+}
+
+main .container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.avatar {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.avatar:hover {
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+.container li a {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.container li a:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.github {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.github:hover {
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(196, 196, 204);
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
